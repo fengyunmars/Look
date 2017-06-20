@@ -17,7 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 /**
  * Created by xinghongfei on 16/8/12.
  */
-public class ApiManager {
+public class ApiManager{
 
     private static final Interceptor REWRITE_CACHE_CONTROL_INTERCEPTOR = new Interceptor() {
         @Override

@@ -11,6 +11,7 @@ import rx.subscriptions.CompositeSubscription;
  */
 public class BasePresenterImpl implements BasePresenter {
 
+    //订阅
     private CompositeSubscription mCompositeSubscription;
 
     protected void addSubscription(Subscription s) {
