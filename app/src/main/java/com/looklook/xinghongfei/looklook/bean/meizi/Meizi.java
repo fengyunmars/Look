@@ -34,6 +34,9 @@ public class Meizi {
     public Date createdAt;
     public Date updatedAt;
     public boolean hasFadedIn=false;
+    public Date publishedAt;
+    public int imageWidth;
+    public int imageHeight;
 
     public int getImageHeight() {
         return imageHeight;
@@ -123,7 +126,4 @@ public class Meizi {
         this.publishedAt = publishedAt;
     }
 
-    public Date publishedAt;
-    public int imageWidth;
-    public int imageHeight;
 }
