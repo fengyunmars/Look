@@ -40,7 +40,6 @@ import com.fengyun.look.looklook.presenter.implView.IMain;
 import com.fengyun.look.looklook.util.AnimUtils;
 import com.fengyun.look.looklook.util.SharePreferenceUtil;
 import com.fengyun.look.looklook.util.ViewUtils;
-import com.fengyun.look.looklook.R;
 
 import java.io.File;
 
@@ -58,7 +57,7 @@ public class MainActivity extends BaseActivity implements IMain {
     @BindView(R.id.drawer)
     DrawerLayout drawer;
 
-    private int nevigationId;
+    private int navigationId;
     private int mainColor;
 
     private SimpleArrayMap<Integer, String> mTitleArryMap = new SimpleArrayMap<>();
@@ -99,9 +98,9 @@ public class MainActivity extends BaseActivity implements IMain {
                 | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
 
         if (savedInstanceState == null) {
-            nevigationId = SharePreferenceUtil.getNevigationItem(this);
-            if (nevigationId != -1) {
-                currentMenuItem = navView.getMenu().findItem(nevigationId);
+            navigationId = SharePreferenceUtil.getNevigationItem(this);
+            if (navigationId != -1) {
+                currentMenuItem = navView.getMenu().findItem(navigationId);
             }
             if (currentMenuItem == null) {
                 currentMenuItem = navView.getMenu().findItem(R.id.zhihuitem);
